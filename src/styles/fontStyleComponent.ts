@@ -6,6 +6,11 @@ export const poppinsThin = Poppins({
   weight: "300",
 });
 
+export const poppinsRegular = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+});
 export const poppinsBold = Poppins({
   subsets: ["latin"],
   display: "swap",
