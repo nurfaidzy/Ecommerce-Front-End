@@ -1,14 +1,28 @@
-import { poppinsBold, poppinsRegular } from "@/styles/fontStyleComponent";
-import { CopyrightOutlined, SendOutlined } from "@ant-design/icons";
+import {
+  poppinsBold,
+  poppinsMedium,
+  poppinsRegular,
+} from "@/styles/fontStyleComponent";
+import {
+  CopyrightOutlined,
+  SendOutlined,
+  FacebookOutlined,
+  XOutlined,
+  InstagramOutlined,
+  LinkedinOutlined,
+} from "@ant-design/icons";
+import Bardcode from "@/images/icons/Barcode.png";
+import GooglePlayButton from "@/images/icons/GooglePlayButton.png";
+import AppStoreButton from "@/images/icons/AppleStoreButton.png";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <div className="bg-black text-white">
-      <div className="px-[100px] py-4">
+      <div className="px-[100px]">
         <div className="py-[87px]">
           <div className={poppinsRegular.className}>
-            <div className="grid grid-cols-4 gap-[24px]">
-              {/* Exclusive Section */}
+            <div className="grid grid-cols-5 gap-[24px]">
               <div className="w-[180px]">
                 <div
                   className={`font-bold text-[24px] ${poppinsBold.className}`}
@@ -37,7 +51,6 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Support Section */}
               <div className="w-[180px]">
                 <div
                   className={`font-bold text-[20px] ${poppinsBold.className}`}
@@ -51,7 +64,6 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Account Section */}
               <div className="w-[180px]">
                 <div
                   className={`font-bold text-[20px] ${poppinsBold.className}`}
@@ -67,7 +79,6 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Quick Link Section */}
               <div className="w-[180px]">
                 <div
                   className={`font-bold text-[20px] ${poppinsBold.className}`}
@@ -79,6 +90,44 @@ const Footer = () => {
                   <div>Terms Of Use</div>
                   <div>FAQ</div>
                   <div>Contact</div>
+                </div>
+              </div>
+
+              <div className="w-[200px]">
+                <div className="font-bold text-[20px]">Download App</div>
+                <div className="grid gap-[24px] pt-[24px]">
+                  <div>
+                    <div className={`text-[12px] ${poppinsMedium.className}`}>
+                      Save $3 with App New User Only
+                    </div>
+                    <div className="flex gap-[8px] pt-[8px]">
+                      <div>
+                        <Image src={Bardcode} alt="Bardcode" width={76} height={76} />
+                      </div>
+                      <div className="grid gap-[8px]">
+                        <div>
+                          <Image src={GooglePlayButton} alt="GooglePlayButton" width={104} height={30} />
+                        </div>
+                        <div>
+                          <Image src={AppStoreButton} alt="AppStoreButton" width={104} height={30} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-[24px] text-[24px]">
+                    <div>
+                      <FacebookOutlined />
+                    </div>
+                    <div>
+                      <XOutlined />
+                    </div>
+                    <div>
+                      <InstagramOutlined />
+                    </div>
+                    <div>
+                      <LinkedinOutlined />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
