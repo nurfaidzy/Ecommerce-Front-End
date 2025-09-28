@@ -1,2 +1,5 @@
-// API services will be added here
-export {};
+// Export API client
+export { default as apiClient } from './api/client';
+
+// Export API services
+export { categoriesService } from './api/categories';
