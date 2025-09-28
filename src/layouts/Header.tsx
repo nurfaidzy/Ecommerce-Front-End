@@ -5,7 +5,7 @@ import {
   ShoppingCartOutlined,
 } from "@ant-design/icons";
 import React from "react";
-import { MenuPickConstans } from "@/Enum/beranda";
+import { MenuPickConstans } from "@/types/navigation";
 
 const Header = () => {
   const menuHover = (menuPick: MenuPickConstans): React.ReactNode => {

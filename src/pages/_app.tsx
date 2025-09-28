@@ -1,8 +1,6 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import NotifHeader from "./layout/NotifHeader";
-import Header from "./layout/Header";
-import Footer from "./layout/Footer";
+import { NotifHeader, Header, Footer } from "@/layouts";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div>
